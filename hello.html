@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search & Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #chat-container {
+            width: 50%;
+            margin: auto;
+        }
+
+        #user-input {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        #send-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        #chat-output {
+            margin-top: 20px;
+            text-align: left;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+
+        .user-msg {
+            font-weight: bold;
+        }
+
+        .bot-msg {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🔍 Chat & Search Assistant</h1>
+
+    <div id="chat-container">
+        <input type="text" id="user-input" placeholder="Ask me anything..." />
+        <button id="send-btn">Search</button>
+
+        <div id="chat-output"></div>
+    </div>
+
+    <script>
+        document.getElementById('send-btn').onclick = function () {
+            const input = document.getElementById('user-input').value;
+            const outputDiv = document.getElementById('chat-output');
+
+            if (input.trim() === "") return;
+
+            // Show user message
+            outputDiv.innerHTML += <div class="user-msg">You: ${input}</div>;
+
+            // Simple Bot Reply Logic (You can customize or use an API)
+            let botReply = "Sorry, I don't know that.";
+            
+            if (input.toLowerCase().includes("hello")) {
+                botReply = "Hi there! How can I help you?";
+            } else if (input.toLowerCase().includes("4g plans")) {
+                botReply = "We offer unlimited 4G plans starting at $10/month.";
+            } else if (input.toLowerCase().includes("your name")) {
+                botReply = "I am your Chat & Search Assistant.";
+            }
+
+            // Show bot reply
+            outputDiv.innerHTML += <div class="bot-msg">Bot: ${botReply}</div>;
+
+            // Clear input field
+            document.getElementById('user-input').value = "";
+
+            // Scroll to bottom
+            outputDiv.scrollTop = outputDiv.scrollHeight;
+        }
+    </script>
+    <footer>
+        <pre>
+        <p>© 2025 My Website   ---Shreeram k bhajantri   </p>
+        </pre>
+    </footer>
+
+</body>
+
+</html>

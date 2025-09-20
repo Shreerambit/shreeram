@@ -1,0 +1,66 @@
+<!doctype html>
+<header class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-3">
+<button id="openSidebarBtn" class="md:hidden p-2 rounded-md bg-white/60 dark:bg-white/5">≡</button>
+<h2 id="convTitle" class="text-lg font-medium">Welcome — Start a conversation</h2>
+</div>
+<div class="flex items-center gap-3">
+<div id="quotaAlert" class="hidden px-3 py-2 rounded-md bg-yellow-50 text-yellow-800 dark:bg-yellow-900/20">Quota low</div>
+<button id="copyAllBtn" class="px-3 py-2 rounded-md bg-white/60 dark:bg-white/5">Copy</button>
+</div>
+</header>
+
+
+<!-- Chat area -->
+<section id="chatContainer" class="flex-1 overflow-hidden flex flex-col">
+<div id="messages" class="flex-1 overflow-y-auto p-6 space-y-4 max-w-3xl mx-auto w-full">
+<!-- Messages will go here -->
+</div>
+
+
+<!-- Composer -->
+<div class="p-4 border-t border-gray-200 dark:border-gray-800 bg-white/40 dark:bg-[#06101a]/40 backdrop-blur-sm">
+<div class="max-w-3xl mx-auto flex gap-3 items-end">
+<textarea id="input" rows="1" placeholder="Type a message and hit Enter" class="flex-1 resize-none bg-white/90 dark:bg-transparent rounded-md p-3 outline-none border border-gray-200 dark:border-gray-800"></textarea>
+<div class="flex flex-col gap-2">
+<button id="sendBtn" class="px-4 py-2 rounded-md bg-indigo-600 text-white">Send</button>
+<button id="clearConvBtn" class="px-4 py-2 rounded-md bg-gray-200 dark:bg-white/5">Clear</button>
+</div>
+</div>
+<div class="text-xs text-gray-500 mt-2">Press <span class="kbd">Enter</span> to send, <span class="kbd">Shift+Enter</span> for newline.</div>
+</div>
+</section>
+</main>
+</div>
+
+
+<!-- Templates -->
+<template id="msgUserTpl">
+<div class="flex justify-end">
+<div class="max-w-[80%] bg-indigo-600 text-white p-3 rounded-lg rounded-br-none shadow-md whitespace-pre-wrap break-words"></div>
+</div>
+</template>
+
+
+<template id="msgAITpl">
+<div class="flex justify-start">
+<div class="max-w-[80%] bg-white/90 dark:bg-[#071429] text-gray-900 dark:text-gray-100 p-3 rounded-lg rounded-bl-none shadow-md whitespace-pre-wrap break-words">
+<div class="ai-meta text-xs text-gray-500 mb-2 hidden">AI • <span class="ai-time"></span></div>
+<div class="ai-content"></div>
+<div class="mt-2 flex gap-2 justify-end">
+<button class="btn-copy px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-white/5">Copy</button>
+</div>
+</div>
+</div>
+</template>
+
+
+<script src="app.js"></script>
+<script>
+// Activate feather icons
+feather.replace()
+// highlight.js init
+document.addEventListener('DOMContentLoaded',()=>hljs.highlightAll())
+</script>
+</body>
+</html>
