@@ -1,4 +1,4 @@
-# shreeram
+# Shreeram
 this is my first html project 
 <h3 align="center">A passionate frontend developer from India</h3>
 
