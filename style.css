@@ -1,0 +1,256 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* text-align: center; */
+    margin: 0px;
+    background-image: url("https://www.wsupercars.com/wallpapers-wide/Formula-1/Red-Bull-Racing/2022-Formula1-Red-Bull-Racing-RB18-002-1440w.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#redbull {
+    color: red;
+    position:fixed;
+    left:5px;
+    top: 5px;
+    text-decoration:gold solid  underline;
+}
+#redbull:hover {
+    color: white;
+    transition: 3s ease;
+}
+#txtredbull{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+#photo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px; 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    /* background-image: url(https://www.wsupercars.com/wallpapers-wide/Formula-1/Red-Bull-Racing/2025-Formula1-Red-Bull-Racing-RB21-003-1440w.jpg); */
+    background-size: fill;
+    background-position: center;
+}
+#photo:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+#info {
+    background-color:  rgba(252, 227, 7, 0.329);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 517.42px;
+}
+#info:hover {
+    background-color:   rgb(252, 227, 7);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 517.42px;
+    transition: 1s ease;
+}
+#txtinfo {
+    color: rgb(0, 0, 0);
+ 
+}
+#shreeram {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+    text-transform: uppercase;
+}
+#age {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+#dob {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+#BCA {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+#html {
+    background-color: rgba(200, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 517.42px;
+ 
+}
+#html:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 517.42px;
+    transition: 1s ease;
+}
+#work {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 517.42px;
+
+}
+#work:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 517.42px;
+    transition: 1s ease;
+}
+
+.div2{
+    display: inline;
+    margin: 10px;
+
+}
+.nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline;
+    margin-top: 5px;
+    transition: 1s ease;
+    /* width: 300px; */
+    color: red;
+    text-align: right;
+    /* align-items: center;  */
+    cursor: pointer;
+
+}
+.nav:hover{
+    background-color: #d32f2f;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+    transition: 1s ease;
+    /* width: 300px; */
+    color: black;
+    text-align: right;
+    align-items: center; 
+    cursor: pointer;
+    box-shadow: 10px 15px 20px #ffd000;
+    color: #fff;
+    height: 50px;
+}
+#submit {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: 1s ease;
+    /* width: 300px; */
+    color: red;
+    text-align: right;
+    /* align-items: center;  */
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #d32f2f;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+    transition: 2s ease;
+    /* width: 300px; */
+    color: black;
+    text-align: right;
+    align-items: center; 
+    cursor: pointer;
+    box-shadow: 0 0 20px #ffd000;
+    color: #fff;
+    height: 50px;
+}
+#fb{
+   background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+ 
+}
+#cm {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+#copy {
+    color: white;
+    text-align: center;
+
+}
+#copy:hover {
+    color: red;
+    transition: 1s ease;
+}
+#navcontainer {
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+#scroll-portfolio {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.scroll-row {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+    animation-play-state: running;
+}
+
+.scroll-row:hover {
+    animation-play-state: paused; /* Pause animation on hover for smoothness */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
