@@ -225,7 +225,7 @@ body {
 }
 #scroll-portfolio {
     overflow: hidden;
-    width: 100%;
+    width: 600px;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -253,4 +253,5 @@ body {
     100% {
         transform: translateX(-50%);
     }
+
 }
