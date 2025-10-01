@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amazon Clone — Home</title>
+  <meta name="description" content="A responsive visual clone of Amazon (HTML + external CSS)." />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="logo">
+        <div class="logo-mark">a</div>
+        <div class="brand">AmazOn<span style="opacity:.9;font-weight:400">.cln</span></div>
+      </div>
+
+      <div class="search-wrap" aria-label="search area">
+        <div class="search-field">
+          <select class="search-select" aria-label="category">
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Clothing</option>
+            <option>Home</option>
+          </select>
+          <input class="search-input" placeholder="Search products, brands and more" />
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+
+      <div class="account-area">
+        <div class="col">
+          <small class="muted">Hello, sign in</small>
+          <div style="font-weight:700">Account & Lists</div>
+        </div>
+        <div class="col">
+          <small class="muted">Returns</small>
+          <div style="font-weight:700">& Orders</div>
+        </div>
+        <div class="cart">
+          <div style="text-align:right">
+            <small class="muted">Cart</small>
+            <div class="count">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="secondary">
+      <div class="container">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="carousel" aria-roledescription="carousel">
+        <div class="slides" style="transform:translateX(0%)">
+          <div class="slide">
+            <div style="display:flex;gap:12px;align-items:center">
+              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=900&q=60" alt="promo" style="width:46%;border-radius:8px;object-fit:cover">
+              <div style="flex:1">
+                <h2>Big Savings on Electronics</h2>
+                <p class="muted">Up to 50% off on select smartphones, headphones and accessories.</p>
+                <div style="margin-top:12px;display:flex;gap:8px"><button class="btn primary">Shop now</button><button class="btn ghost">See deals</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div style="display:flex;gap:12px;align-items:center">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&q=60" alt="promo" style="width:46%;border-radius:8px;object-fit:cover">
+              <div style="flex:1">
+                <h2>Home & Kitchen Sale</h2>
+                <p class="muted">New deals launched today — refresh your space without breaking the bank.</p>
+                <div style="margin-top:12px;display:flex;gap:8px"><button class="btn primary">Explore</button><button class="btn ghost">Top picks</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div style="display:flex;gap:12px;align-items:center">
+              <img src="https://images.unsplash.com/photo-1542293787938-c9e299b8803e?w=900&q=60" alt="promo" style="width:46%;border-radius:8px;object-fit:cover">
+              <div style="flex:1">
+                <h2>Books: Bestsellers</h2>
+                <p class="muted">Discover new releases and timeless classics.</p>
+                <div style="margin-top:12px;display:flex;gap:8px"><button class="btn primary">Buy now</button><button class="btn ghost">Browse books</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="side-banners">
+        <div class="banner">
+          <h4 style="margin:0 0 6px">Free delivery</h4>
+          <p class="muted">Free delivery on eligible orders over ₹499</p>
+        </div>
+        <div class="banner">
+          <h4 style="margin:0 0 6px">Subscribe & Save</h4>
+          <p class="muted">Get recurring deliveries with extra discounts.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container main-layout">
+      <aside class="categories" aria-label="shop categories">
+        <h3>Shop by Category</h3>
+        <ul>
+          <li>Electronics</li>
+          <li>Computers</li>
+          <li>Books</li>
+          <li>Clothing</li>
+          <li>Home & Kitchen</li>
+          <li>Beauty & Personal Care</li>
+          <li>Sports</li>
+          <li>Automotive</li>
+        </ul>
+      </aside>
+
+      <section>
+        <div class="space-between" style="margin-bottom:12px">
+          <h2 style="margin:0">Top picks for you</h2>
+          <div class="muted">Showing 1-24 of 3,240 results</div>
+        </div>
+
+        <div class="deal-strip" role="list">
+          <div class="deal">
+            <small class="muted">Deal of the day</small>
+            <div style="font-weight:800;margin-top:6px">Smartwatch Series — 40% off</div>
+            <div class="muted" style="margin-top:8px">Limited time offer</div>
+          </div>
+          <div class="deal">
+            <small class="muted">Hot</small>
+            <div style="font-weight:800;margin-top:6px">Noise Cancelling Headphones</div>
+          </div>
+          <div class="deal">
+            <small class="muted">New</small>
+            <div style="font-weight:800;margin-top:6px">Ergonomic Chair</div>
+          </div>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="products" aria-live="polite">
+
+          <!-- product card (repeat for multiple products) -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1580910051077-36a9c2db2d3d?w=800&q=60" alt="product 1" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">Wireless Bluetooth Earbuds with Charging Case</div>
+            <div class="product-rating">★★★★★ <span class="muted">(12,345)</span></div>
+            <div class="product-price">₹1,499 <span class="muted" style="font-weight:400;text-decoration:line-through;margin-left:8px;color:#9ca3af">₹2,999</span></div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1580717280362-6a6ec3a7db8b?w=800&q=60" alt="product 2" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">Portable Power Bank 20000mAh</div>
+            <div class="product-rating">★★★★☆ <span class="muted">(8,901)</span></div>
+            <div class="product-price">₹899</div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=60" alt="product 3" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">Stainless Steel Pressure Cooker — 3L</div>
+            <div class="product-rating">★★★★☆ <span class="muted">(4,210)</span></div>
+            <div class="product-price">₹1,199</div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=60" alt="product 4" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">Bestselling Fiction — Paperback</div>
+            <div class="product-rating">★★★★★ <span class="muted">(21,212)</span></div>
+            <div class="product-price">₹329</div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1526178613246-8ecb8a8e47d1?w=800&q=60" alt="product 5" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">Men's Casual Sneakers</div>
+            <div class="product-rating">★★★★☆ <span class="muted">(6,345)</span></div>
+            <div class="product-price">₹1,799</div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1588694928191-61f7b7b9f8e1?w=800&q=60" alt="product 6" style="max-height:160px;object-fit:contain">
+            </div>
+            <div class="product-title">4K Smart LED TV — 43 inch</div>
+            <div class="product-rating">★★★★☆ <span class="muted">(10,001)</span></div>
+            <div class="product-price">₹29,999 <span class="muted" style="text-decoration:line-through;margin-left:8px">₹39,999</span></div>
+            <div class="product-actions">
+              <button class="btn primary">Add to cart</button>
+              <button class="btn ghost">Buy now</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- pagination mock -->
+        <div style="margin-top:20px;display:flex;justify-content:center;gap:8px">
+          <button class="btn ghost">« Prev</button>
+          <button class="btn ghost">1</button>
+          <button class="btn ghost">2</button>
+          <button class="btn ghost">3</button>
+          <button class="btn ghost">Next »</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Make Money with Us</h4>
+          <ul>
+            <li>Sell on AmazOn.cln</li>
+            <li>Advertise</li>
+            <li>Fulfilment</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Payment Products</h4>
+          <ul>
+            <li>Credit Cards</li>
+            <li>EMI</li>
+            <li>Gift Cards</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Let Us Help You</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Returns</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:22px;border-top:1px solid rgba(255,255,255,0.06);padding-top:18px;display:flex;justify-content:space-between;align-items:center">
+        <div class="muted">© 2025, AmazOn.cln — This is a demo clone for learning purposes.</div>
+        <div class="muted">Made with ♥ for practice</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
